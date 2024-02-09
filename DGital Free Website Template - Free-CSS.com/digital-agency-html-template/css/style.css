@@ -550,6 +550,11 @@ h6,
     transition: .3s;
 }
 
+.imgIcon{
+    width: 64px;
+    height: 64px;
+}
+
 .footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
