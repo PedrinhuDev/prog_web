@@ -595,3 +595,13 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
+.detalheCursoImg {
+}
+
+.cabecalhoCurso{
+    width: 500px;
+    height: 500px;
+    margin-left: 200px;
+    justify-content: left;
+}
