@@ -212,6 +212,7 @@ h6,
 .hero-header {
     margin-bottom: 6rem;
     padding: 18rem 0;
+    height: 240px;
     background:
         url(../img/blob-top-left.png),
         url(../img/blob-top-right.png),
@@ -232,6 +233,7 @@ h6,
 @media (max-width: 991.98px) {
     .hero-header {
         padding: 6rem 0 9rem 0;
+      
     }
 }
 
@@ -597,11 +599,9 @@ h6,
 }
 
 .detalheCursoImg {
-}
-
-.cabecalhoCurso{
-    width: 500px;
-    height: 500px;
-    margin-left: 200px;
-    justify-content: left;
+    width: 344px;
+    height: 244px;
+    border-radius: 40%;
+    border-color: #04000B;
+    box-shadow: 10px 5px 5px rgb(121, 121, 121);
 }
