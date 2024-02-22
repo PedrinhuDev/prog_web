@@ -82,29 +82,29 @@
         <!-- Navbar & Hero End -->
 
         <div class="container">
-            <form class="row g-3">
+            <div class="row g-3">
                 <div class="col-md-4">
                   <label for="validationDefault01" class="form-label">Nome</label>
-                  <input type="text" class="form-control" id="validationDefault01" required>
+                  <input type="text" class="form-control" id="inptNome" required>
                 </div>
                 <div class="col-md-4">
                   <label for="validationDefault02" class="form-label">Sobrenome</label>
-                  <input type="text" class="form-control" id="validationDefault02" required>
+                  <input type="text" class="form-control" id="inptSobrenome" required>
                 </div>
                 <div class="col-md-4">
                   <label for="validationDefaultUsername" class="form-label">Usuário</label>
                   <div class="input-group">
                     <span class="input-group-text" id="inputGroupPrepend2" style="background-color:#6222CC ; color:white ">@</span>
-                    <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                    <input type="text" class="form-control" id="inptUsername"  aria-describedby="inputGroupPrepend2" required>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <label for="validationDefault03" class="form-label">Cidade</label>
-                  <input type="text" class="form-control" id="validationDefault03" required>
+                  <input type="text" class="form-control" id="inptCidade" required>
                 </div>
                 <div class="col-md-3">
                   <label for="validationDefault04" class="form-label">Estado</label>
-                  <select class="form-select" id="validationDefault04" required>
+                  <select class="form-select" id="inptEstado" required>
                     <option selected disabled value="">Escolha...</option>
                     <option>Alagoas</option>
                     <option>Sergipe</option>
@@ -117,39 +117,39 @@
                
                 <div class="mb-3">
                     <label for="formFile" class="form-label" >Escolha sua foto</label>
-                    <input class="form-control" type="file" id="formFile" >
+                    <input class="form-control" type="file" id="fotoFile" >
                     </div>
 
                     <div class="row mb-3">
                         <label for="inputEmail3" class="form-label">Email</label>
                         <div class="col-sm-10">
-                          <input type="email" class="form-control" id="inputEmail3">
+                          <input type="email" class="form-control" id="inputEmail">
                         </div>
                       </div>
                       <div class="row mb-3">
                         <label for="inputPassword3" class="form-label">Senha</label>
                         <div class="col-sm-10">
-                          <input type="password" class="form-control" id="inputPassword3">
+                          <input type="password" class="form-control" id="inputPassword">
                         </div>
                       </div>
                       <fieldset class="row mb-3">
                         <legend class="form-label">Você é:</legend>
                         <div class="col-sm-10">
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="rdEstudante" value="estudante" checked>
+                            <label class="form-check-label" for="rdEstudante">
                               Estudante
                             </label>
                           </div>
                           <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                            <label class="form-check-label" for="gridRadios2">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="rdProfessor" value="professor">
+                            <label class="form-check-label" for="rdProfessor">
                               Professor
                             </label>
                           </div>
                           <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                            <label class="form-check-label" for="gridRadios3">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="rdEmpresa" value="empresa">
+                            <label class="form-check-label" for="rdEmpresa">
                               Representante de empresa
                             </label>
                           </div>
@@ -164,11 +164,11 @@
                         </div>
                       </div>
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Enviar</button>
+                  <button class="btn btn-primary" type="" onclick="cadastrarUser()"><a href="login.html" style="text-decoration: none; color: rgb(255, 255, 255);">Cadastrar</a></button>
                 </div>
               
                    
-              </form>
+              </div>
           </div>
 
   
@@ -267,6 +267,10 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="classes.js"></script>
+    <script src="designer.js"></script>
+    <script src="controlador.js"></script>
+    <script src="objetos.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
