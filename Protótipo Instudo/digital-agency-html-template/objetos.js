@@ -27,5 +27,5 @@ let user = new Usuario(nome.value, sobrenome.value, userName.value, cidade.value
 let array = new ListaUsuarios();
 array.adicionarUsuario(user)
 setItemLocal(array.usuarios)
-
+setURL(user)
 }
