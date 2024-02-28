@@ -1,15 +1,32 @@
 //LocalStorage
 
-function setItemLocal(array){
+function setItemLocal(user){
+
     localStorage.clear();
-    localStorage.setItem(`usuarios`, JSON.stringify(array));
-    i++
+    localStorage.setItem('nome', user.nome);
+    localStorage.setItem('sobrenome', user.sobrenome);
+    localStorage.setItem('email', user.email);
+    localStorage.setItem('senha', user.senha);
+    localStorage.setItem('userName', user.userName);
+    localStorage.setItem('cidade', user.cidade);
+    localStorage.setItem('foto', user.foto);
+    localStorage.setItem('convenio', user.convenio);
+
+    
 }
 
-function checarItem(){
-    let user = localStorage.getItem('usuarios');
-    window.location.href  = 'infoUser.html'
-    console.log(user)
+function checarItem(emailInput, senhaInput){
+    let userEmail = localStorage.getItem('email');
+    let userSenha = localStorage.getItem('senha')
+    console.log(userEmail)
+    console.log(userSenha)
+    console.log(emailInput)
+    console.log(senhaInput)
+    if(emailInput == userEmail && senhaInput == userSenha){
+        alert('Bem vindo' + localStorage.getItem('nome'))
+    }else{
+        alert('Email ou Senha inválidos')
+    }
 }
 
 

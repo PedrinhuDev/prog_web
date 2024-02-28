@@ -26,6 +26,13 @@ if((document.getElementById("rdEstudante")).checked){
 let user = new Usuario(nome.value, sobrenome.value, userName.value, cidade.value, estado.value, foto.value, email.value, senha.value, convenio)
 let array = new ListaUsuarios();
 array.adicionarUsuario(user)
-setItemLocal(array.usuarios)
-setURL(user)
+setItemLocal(user)
+//setURL(user)
+}
+
+function loginUser(){
+    let email = document.getElementById('inputEmail')
+    let senha = document.getElementById('inputSenha')
+    console.log(senha.value)
+    checarItem(email.value, senha.value)
 }
