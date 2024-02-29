@@ -27,7 +27,6 @@ let estado = document.getElementById("inptEstado")
 let foto = document.getElementById("fotoFile")
 let email = document.getElementById("inputEmail")
 let senha = document.getElementById("inputPassword")
-let convenio = document.getElementById("rdEstudante")
 
 nome.value = ''
 sobrenome.value = ''

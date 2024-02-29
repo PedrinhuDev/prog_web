@@ -12,12 +12,3 @@ class Usuario{
     }
 }
 
-class ListaUsuarios{
-    constructor(){
-         this.usuarios = []
-    }
-
-    adicionarUsuario(usuario){
-        this.usuarios.push(usuario);
-    }
-}

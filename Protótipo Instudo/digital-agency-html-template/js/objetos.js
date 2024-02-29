@@ -24,8 +24,6 @@ if((document.getElementById("rdEstudante")).checked){
 }
 
 let user = new Usuario(nome.value, sobrenome.value, userName.value, cidade.value, estado.value, foto.value, email.value, senha.value, convenio)
-let array = new ListaUsuarios();
-array.adicionarUsuario(user)
 setItemLocal(user)
 limparCampos()
 //setURL(user)
