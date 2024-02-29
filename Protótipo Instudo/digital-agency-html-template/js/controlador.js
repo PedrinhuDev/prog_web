@@ -48,8 +48,8 @@ function checarItem(emailInput, senhaInput){
     console.log(emailInput)
     console.log(senhaInput)
     if(emailInput == userEmail && senhaInput == userSenha){
-       
-        window.location.href=`http://${window.location.hostname}:${window.location.port}/Prot%C3%B3tipo%20Instudo/digital-agency-html-template//service.html`
+
+        window.location.href=`../service.html`
         alert('Bem vindo ' + localStorage.getItem('nome'))
         return
     }else{
