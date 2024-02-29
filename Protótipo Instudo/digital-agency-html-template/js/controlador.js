@@ -15,17 +15,47 @@ function setItemLocal(user){
     
 }
 
+ function limparCampos(){
+
+let nome = document.getElementById("inptNome");
+let sobrenome = document.getElementById("inptSobrenome");
+let userName = document.getElementById("inptUsername")
+let cidade = document.getElementById("inptCidade")
+let estado = document.getElementById("inptEstado")
+
+
+let foto = document.getElementById("fotoFile")
+let email = document.getElementById("inputEmail")
+let senha = document.getElementById("inputPassword")
+let convenio = document.getElementById("rdEstudante")
+
+nome.value = ''
+sobrenome.value = ''
+userName.value = ''
+cidade.value = ''
+estado.value = ''
+foto.value = ''
+email.value = ''
+senha.value = ''
+
+}
+
 function checarItem(emailInput, senhaInput){
     let userEmail = localStorage.getItem('email');
     let userSenha = localStorage.getItem('senha')
+    let login = document.getElementById("login")
     console.log(userEmail)
     console.log(userSenha)
     console.log(emailInput)
     console.log(senhaInput)
     if(emailInput == userEmail && senhaInput == userSenha){
-        alert('Bem vindo' + localStorage.getItem('nome'))
+       
+        window.location.href=`http://${window.location.hostname}:${window.location.port}/Prot%C3%B3tipo%20Instudo/digital-agency-html-template//service.html`
+        alert('Bem vindo ' + localStorage.getItem('nome'))
+        return
     }else{
         alert('Email ou Senha inválidos')
+        return
     }
 }
 

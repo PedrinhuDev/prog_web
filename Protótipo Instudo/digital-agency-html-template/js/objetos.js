@@ -27,6 +27,7 @@ let user = new Usuario(nome.value, sobrenome.value, userName.value, cidade.value
 let array = new ListaUsuarios();
 array.adicionarUsuario(user)
 setItemLocal(user)
+limparCampos()
 //setURL(user)
 }
 
@@ -35,4 +36,5 @@ function loginUser(){
     let senha = document.getElementById('inputSenha')
     console.log(senha.value)
     checarItem(email.value, senha.value)
+
 }
