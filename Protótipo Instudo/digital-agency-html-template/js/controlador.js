@@ -39,6 +39,15 @@ senha.value = ''
 
 }
 
+function mostrarSenha() {
+    var x = document.getElementById("inputSenha");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
 function checarItem(emailInput, senhaInput){
     let userEmail = localStorage.getItem('email');
     let userSenha = localStorage.getItem('senha')
