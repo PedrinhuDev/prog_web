@@ -48,7 +48,6 @@ function checarItem(emailInput, senhaInput){
     console.log(emailInput)
     console.log(senhaInput)
     if(emailInput == userEmail && senhaInput == userSenha){
-
         window.location.href=`../service.html`
         alert('Bem vindo ' + localStorage.getItem('nome'))
         return
