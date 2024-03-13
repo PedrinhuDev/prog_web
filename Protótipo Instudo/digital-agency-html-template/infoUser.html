@@ -34,7 +34,7 @@
       <link href="css/style.css" rel="stylesheet">
   </head>
   
-  <body>
+  <body onload="boasvindas()">
       <div class="container-xxl bg-white p-0">
           <!-- Spinner Start -->
           <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -57,9 +57,9 @@
                   </button>
                   <div class="collapse navbar-collapse" id="navbarCollapse">
                       <div class="navbar-nav mx-auto py-0">
-                          <a href="index.html" class="nav-item nav-link active">Home</a>
+                          <a href="index.html" class="nav-item nav-link">Home</a>
                           
-                          <a href="service.html" class="nav-item nav-link">Serviços</a>
+                          <a href="service.html" class="nav-item nav-link active">Serviços</a>
                           <a href="project.html" class="nav-item nav-link">Cursos</a>  
                           <a href="about.html" class="nav-item nav-link">Sobre</a>                      
                           
@@ -73,7 +73,7 @@
                   <div class="container my-5 py-5 px-lg-5">
                       <div class="row g-5 py-5">
                           <div class="col-12 text-center">
-                              <h1 class="text-white animated slideInDown">Informações Pessoais</h1>
+                              <h1 class="text-white animated slideInDown">Comece sua Jornada</h1>
                               <hr class="bg-white mx-auto mt-0" style="width: 90px;">
                           </div>
                       </div>
@@ -88,7 +88,199 @@
   
     
             
-  
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">Bem vindo!</h4>
+                <p id="textBoasVindas"></p>
+                <hr>
+                <p class="mb-0">Comece agora!</p>
+              </div>
+
+   <!-- Service Start -->
+   <div class="container-xxl py-5">
+    <div class="container py-5 px-lg-5">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <p class="section-title text-secondary justify-content-center"><span></span>Nossos Serviços<span></span></p>
+            <h1 class="text-center mb-5">Quais soluções providenciamos</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-search fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Monitorias</h5>
+                    <p class="m-0">Disponível na plataforma monitorias com estudantes para tirar dúvidas de matérias e atividades</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-laptop-code fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Cursos</h5>
+                    <p class="m-0">Diversos cursos empolgantes para se especializar em uma área específica com certificados</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Rede Social</h5>
+                    <p class="m-0">Uma incrível rede social para além dos estudos, aumentando seu ciclo social</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-mail-bulk fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Vagas de Emprego</h5>
+                    <p class="m-0">Disponibilize seu currículo para que empresas em vagas de emprego</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fa fa-thumbs-up fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Professores     </h5>
+                    <p class="m-0">Conte com a ajuda de professores especializados para seu ensino</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item d-flex flex-column text-center rounded">
+                    <div class="service-icon flex-shrink-0">
+                        <i class="fab fa-android fa-2x"></i>
+                    </div>
+                    <h5 class="mb-3">Salas de Aula</h5>
+                    <p class="m-0">Entre em salas de aulas que se interessar para ter acesso a atividades inéditas</p>
+                    <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+  <!-- Projects Start -->
+  <div class="container-xxl py-5">
+    <div class="container py-5 px-lg-5">
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+            <p class="section-title text-secondary justify-content-center"><span></span>Nossos Cursos<span></span></p>
+            <h1 class="text-center mb-5">Cursos Mais Novos</h1>
+        </div>
+        <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-12 text-center">
+                <ul class="list-inline mb-5" id="portfolio-flters">
+                    <li class="mx-2 active" data-filter="*">Todos</li>
+                    <li class="mx-2" data-filter=".first">Para Internet</li>
+                    <li class="mx-2" data-filter=".second">Rotina</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row g-4 portfolio-container">
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href="tela-detalhes.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">Programação</p>
+                        <h5 class="lh-base mb-0">Introdução a programação</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href="tela-detalhes.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">Rotina</p>
+                        <h5 class="lh-base mb-0">Como administrar seu tempo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">Empreendedorismo</p>
+                        <h5 class="lh-base mb-0">Empreendedorismo Digital</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href="tela-detalhes.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">Rotina</p>
+                        <h5 class="lh-base mb-0">Como Melhorar seu Desempenho</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href="tela-detalhes.html"><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">Marketing</p>
+                        <h5 class="lh-base mb-0">Marketing Digital</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
+                <div class="rounded overflow-hidden">
+                    <div class="position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                        <div class="portfolio-overlay">
+                            <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-light p-4">
+                        <p class="text-primary fw-medium mb-2">Rotina</p>
+                        <h5 class="lh-base mb-0">Planejamento Pessoal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Projects End -->
+
+
           <!-- Footer Start -->
           <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
               <div class="container py-5 px-lg-5">
@@ -182,6 +374,8 @@
       <script src="lib/owlcarousel/owl.carousel.min.js"></script>
       <script src="lib/isotope/isotope.pkgd.min.js"></script>
       <script src="lib/lightbox/js/lightbox.min.js"></script>
+      <script src="./js/controlador.js"></script>
+      <script src="./js/informacoes.js"></script>
   
       <!-- Template Javascript -->
       <script src="js/main.js"></script>

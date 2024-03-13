@@ -32,7 +32,6 @@ limparCampos()
 function loginUser(){
     let email = document.getElementById('inputEmail')
     let senha = document.getElementById('inputSenha')
-    console.log(senha.value)
     checarItem(email.value, senha.value)
 
 }

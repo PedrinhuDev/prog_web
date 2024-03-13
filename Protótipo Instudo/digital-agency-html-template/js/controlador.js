@@ -42,18 +42,12 @@ senha.value = ''
 function checarItem(emailInput, senhaInput){
     let userEmail = localStorage.getItem('email');
     let userSenha = localStorage.getItem('senha')
-    let login = document.getElementById("login")
-    console.log(userEmail)
-    console.log(userSenha)
-    console.log(emailInput)
-    console.log(senhaInput)
+   
     if(emailInput == userEmail && senhaInput == userSenha){
-        window.location.href=`../service.html`
-        alert('Bem vindo ' + localStorage.getItem('nome'))
-        return
+        window.location.href=`./infoUser.html`
     }else{
-        alert('Email ou Senha inválidos')
-        return
+        let alerta = document.getElementById('alert')
+        alerta.style.display = 'flex'
     }
 }
 
