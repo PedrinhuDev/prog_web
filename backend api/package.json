@@ -1,0 +1,23 @@
+{
+  "name": "prog_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MelrickDavison/prog_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MelrickDavison/prog_web/issues"
+  },
+  "homepage": "https://github.com/MelrickDavison/prog_web#readme",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
